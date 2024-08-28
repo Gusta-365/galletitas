@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Especial para Fer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Para ti, Fer</h1>
+        <div class="gif-container">
+            <img src="assets/images/tu-imagen.png" alt="Foto de Fer" class="profile-pic">
+        </div>
+        <div class="poem-container">
+            <p>¡Eres increíblemente especial! Aquí va un poema solo para ti:</p>
+            <blockquote id="poem">
+                "En un universo lleno de estrellas brillantes,<br>
+                Tú eres la que hace que todo sea radiante.<br>
+                Como galletas frescas con sabor a caramelo,<br>
+                Eres única, un verdadero anhelo."
+            </blockquote>
+            <button id="change-poem">¡Otro poema!</button>
+        </div>
+        <p>Mañanita te llegarán unas GALLETITAS, no será caldo ni una camita, pero son galletitas ricas de Nutella,
+            Browne y algo más. Jijijiji tu canto me encanta y son amores, fua amores que matan.</p>
+        <button id="reveal-button">¡Descubre más!</button>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-button">&times;</span>
+                <h2>¡Sorpresa!</h2>
+                <p>Más galletitas están en camino para ti, Fer. ¡Espero que te gusten!</p>
+            </div>
+        </div>
+        <div class="player-container">
+            <h2>Escucha esto:</h2>
+            <audio controls class="audio-player">
+                <source src="assets/audio/tu-cancion1.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <audio controls class="audio-player">
+                <source src="assets/audio/tu-cancion2.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <div class="joke-container">
+            <p id="joke">¿Por qué la galleta fue al médico? ¡Porque se sentía desmigajada!</p>
+            <button id="change-joke">¡Otro chiste!</button>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

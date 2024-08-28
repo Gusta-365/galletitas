@@ -1,0 +1,232 @@
+body {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    /* Gradiente colorido */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho total */
+}
+
+h1 {
+    color: #ff6f61;
+    /* Color rosado */
+    margin: 20px 0;
+    font-size: 1.8em;
+    /* Tamaño de fuente ajustado */
+}
+
+.gif-container {
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 100px;
+    /* Ajustar tamaño para pantallas pequeñas */
+    border-radius: 50%;
+    border: 5px solid #ff6f61;
+    /* Borde de color rosado */
+    animation: bounce 1s infinite;
+}
+
+.poem-container,
+.joke-container {
+    margin: 20px 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    padding: 15px;
+    border-left: 5px solid #ff6f61;
+    /* Línea de borde rosado */
+    background-color: #ffe0e0;
+    /* Fondo rosado claro */
+    font-size: 1em;
+    /* Ajustar tamaño de fuente */
+    animation: fadeIn 1s;
+}
+
+button {
+    background-color: #ff6f61;
+    /* Color rosado */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    animation: pop 0.5s;
+}
+
+button:hover {
+    background-color: #ff3d3d;
+    /* Rosado más oscuro en hover */
+}
+
+.audio-player {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        /* Tamaño más pequeño para dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        /* Tamaño de fuente ajustado */
+    }
+
+    blockquote {
+        font-size: 0.9em;
+        /* Tamaño de fuente ajustado */
+    }
+
+    button {
+        font-size: 0.9em;
+        /* Tamaño de fuente ajustado */
+        padding: 8px 16px;
+        /* Tamaño del botón ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 60px;
+        /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 1.2em;
+        /* Tamaño de fuente ajustado */
+    }
+
+    blockquote {
+        font-size: 0.8em;
+        /* Tamaño de fuente ajustado */
+    }
+
+    button {
+        font-size: 0.8em;
+        /* Tamaño de fuente ajustado */
+        padding: 6px 12px;
+        /* Tamaño del botón ajustado */
+    }
+}
